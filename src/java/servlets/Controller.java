@@ -169,11 +169,12 @@ public class Controller extends HttpServlet {
                     }
                     Purchase purchase;
                     Integer iquantity = new Integer(quantity);
-                    if((product.getCount()-iquantity>0) 
-                            && (customer.getMoney()-product.getPrice()*iquantity>0)){
+                    if((product.getCount()-iquantity>=0) 
+                            && (customer.getMoney()-product.getPrice()*iquantity>=0)){
                         product.setCount(product.getCount()-new Integer(quantity));
                         productFacade.edit(product);
                         customer.setMoney(customer.getMoney()-product.getPrice()*iquantity);
+                        customerFacade.edit(customer);
                         purchase = new Purchase(product, customer, new Integer(quantity), c.getTime());
                         purchaseFacade.create(purchase);
                     }else{
