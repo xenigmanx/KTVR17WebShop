@@ -1,7 +1,7 @@
 <%-- 
     Document   : newCustomer
     Created on : Sep 26, 2018, 10:50:01 AM
-    Author     : Melnikov
+    Author     : pupil
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -34,9 +34,9 @@
             <input type="text" name="password"><br>
             <br>
             <input type="submit" value="Добавить">
-            <a type="submit"href="welcome">Назад</a>
-        </form><br>
             
+        </form><br>
+ </body>
+</html>            
         
-    </body>
-</html>
+

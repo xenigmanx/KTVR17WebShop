@@ -1,7 +1,7 @@
 <%-- 
-    Document   : takeBooks.jsp
+    Document   : listTakeCustomer.jsp
     Created on : Oct 5, 2018, 10:38:13 AM
-    Author     : Melnikov
+    Author     : pupil
 --%>
 
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>

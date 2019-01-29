@@ -1,7 +1,7 @@
 <%-- 
-    Document   : page2
+    Document   : welcome
     Created on : Sep 26, 2018, 9:37:07 AM
-    Author     : Melnikov
+    Author     : pupil
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -12,7 +12,7 @@
         <title>Главная</title>
     </head>
     <body>
-        <h1>Навигация по нашему магазину</h1>
+     
         ${info}
         <br>
         <a href="showLogin">Войти</a>
@@ -38,9 +38,5 @@
         <a href="editUserRoles">Назначение ролей пользователям</a>
         <br><br>
         <hr>
-       
-        
-    </body>
-</html>
-    </body>
+</body>
 </html>

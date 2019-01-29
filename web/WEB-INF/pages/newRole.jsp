@@ -1,7 +1,7 @@
 <%-- 
-    Document   : newBook
+    Document   : newRole
     Created on : Sep 26, 2018, 10:50:01 AM
-    Author     : Melnikov
+    Author     : pupil
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>

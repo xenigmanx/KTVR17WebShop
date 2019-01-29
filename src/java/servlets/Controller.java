@@ -43,6 +43,7 @@ import util.PageReturner;
     "/showBuyProduct",
     "/findTakeProduct",
     "/buyProduct"
+  
     
     
 })
@@ -148,6 +149,8 @@ public class Controller extends HttpServlet {
                     request.setAttribute("listProducts", listProducts);
                     request.getRequestDispatcher(PageReturner.getPage("listProduct")).forward(request, response);
                     break;
+                
+                
                 case "/showPurchase":
                     listProducts = productFacade.findAll();
                     request.setAttribute("listProducts", listProducts);
@@ -177,12 +180,18 @@ public class Controller extends HttpServlet {
                         customerFacade.edit(customer);
                         purchase = new Purchase(product, customer, new Integer(quantity), c.getTime());
                         purchaseFacade.create(purchase);
-                    }else{
-                        request.setAttribute("info", "данного продукта нет на складе");
+                        
+                        request.setAttribute("info", "товар успешно куплен");
+                        request.setAttribute("info", "деньги на счету");
+                    }else{ 
+                        request.setAttribute("info", "Нет товара"); 
+                        
+                        request.setAttribute("info", "нет денег");
                     }
+                    listProducts = productFacade.findAll();
+                    request.setAttribute("listProducts", listProducts);
                     List<Purchase> listPurchase = purchaseFacade.findTakeProduct(product,customer);
                     request.setAttribute("listPurchase", listPurchase);
-                    request.setAttribute("info", "товар куплен");
                     request.getRequestDispatcher(PageReturner.getPage("showPurchase")).forward(request, response);
                     break;
                     

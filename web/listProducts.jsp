@@ -1,7 +1,7 @@
 <%-- 
     Document   : listProducts
     Created on : Oct 3, 2018, 10:46:46 AM
-    Author     : Melnikov
+    Author     : pupil
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -16,9 +16,9 @@
         <h1>Список товаров:</h1>
         <ul>
             <c:forEach var="product" items="${listProducts}">
-                <li>${product.name}:${product.count}шт. цена: ${product.price} евро 
+                <li>${product.id}${product.name}:${product.count}шт. цена: ${product.price} евро</li> 
                 
-                    <a href="deleteProduct?deleteProductId=${product.id}">Убрать товар</a>
+                    <a href=deleteProduct?deleteProductId=">Убрать товар</a>
                 
                   </li>
             </c:forEach>

@@ -1,9 +1,8 @@
 <%-- 
-    Document   : newBook
+    Document   : editUserRoles
     Created on : Sep 26, 2018, 10:50:01 AM
-    Author     : Melnikov
+    Author     : pupil
 --%>
-
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
